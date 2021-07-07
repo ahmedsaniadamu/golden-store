@@ -1,0 +1,131 @@
+/* this style sheet is just for login form. and responsive based on different screen devices */
+
+.login-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 3rem  0 3rem 0;
+}
+form{
+       width: 40%;    
+       background-image: radial-gradient(circle,rgb(254, 175, 69),rgb(210, 120, 1));
+       border-radius: 00.4rem;
+}
+form > .fa-user{
+        display: inline-block;
+        padding: 0.5rem ;
+        border-radius: 50%;
+        background-color: rgb(184, 105, 3);
+        color: rgb(211, 209, 209);
+        margin-left: 50%;
+        margin-top: 2rem;
+        transform: translateX(-50%);
+}
+ form .user-email, form .user-password{
+       width: 80%;
+       height: 1rem;
+       display: flex;
+       margin: auto;
+       margin-top: 1.5rem;
+       border-bottom: 2px solid rgb(2, 2, 2);
+       padding-left: 0.1rem;
+       transition: all 1s;
+}
+form .user-email:hover , form .user-password:hover{
+    border-bottom: 2px solid rgb(4, 179, 56);
+}
+ #envelope , #lock{
+    width: 6%;
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+    color: rgb(31, 30, 30);
+}
+#email,#password{
+     background-color: transparent;
+     width: 94%;
+     font-size: 0.5rem;
+     border: none;
+     color: rgb(53, 52, 52);
+     padding-left: 0.2rem;
+}
+#email:active,#email:focus,#email:hover,
+#password:active,#password:focus,#password:hover{
+     outline: none;
+     border: none;
+}
+#email:focus,#password:focus{
+     color: rgb(41, 40, 40);
+}
+
+/* changging placeholder text color using non-standart selector 
+ for firefox safari opera chrome  */
+
+::placeholder{
+    color: rgb(44, 43, 43);
+    opacity: 1;
+    font-family: Arsenal,sans-serif;
+}
+ /* for microsoft edge */
+:-ms-input-placeholder{
+    color: rgb(48, 47, 47);
+    opacity: 1;
+}
+.error-message{
+     margin-top: 1rem;
+     font-weight: bold;
+     font-style: oblique;
+     font-family: Arsenal;
+     font-size: 0.5rem;
+     color: rgb(17, 17, 17);
+     text-align: center;
+} 
+.no-account{
+     margin-top: 2rem;
+     font-size: 0.5rem;
+     padding-left: 0.1rem;
+     color: rgb(31, 30, 30);
+}
+.login-btn{
+    display: block;
+    font-size: 0.6rem;
+    width: 60%;
+    color: rgb(250, 249, 249);
+    background-color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 0.2rem 0;
+    border: none;
+    border-radius: 0.3rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition:all 0.3s ;
+}
+.login-btn:active{
+     opacity: 0.4;
+}
+
+/* mobile responsive */
+ @media screen and (max-width:480px) {
+      .login-form{
+    width: 100%;
+    margin-top: 2rem;
+      }
+      form{
+            width: 90%;
+      }
+ }
+
+ /* for tablet devices */
+
+@media  screen and (min-width:500px)and (max-width:700px){
+         .login-form{
+    width: 100%;
+    margin-top: 2rem;
+      }
+      form{
+            width: 80%;
+      }
+
+}

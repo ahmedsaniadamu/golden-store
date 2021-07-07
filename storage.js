@@ -1,0 +1,2 @@
+/* this script is used to communicate between login page and signup page
+to send data from sign up page to login page  */

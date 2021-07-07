@@ -1,0 +1,159 @@
+/* this style sheet is just for signup form. and responsive based on different screen devices */
+
+.signup-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 3rem  0 3rem 0;
+}
+form{
+       width: 50%;    
+       background-image: radial-gradient(circle,rgb(254, 175, 69),rgb(210, 120, 1));
+       border-radius: 00.4rem;
+}
+fieldset{
+      margin: auto;
+      margin-top: 1rem;
+      width: 80%;
+      border: none;
+      border-top: 1px solid rgb(14, 13, 13);
+      font-size: 0.7rem;
+}
+legend{
+     color: rgb(15, 15, 15);
+     display: block;
+     margin: auto;
+     text-align: center;
+     width: 17%;
+}
+input{
+     padding: 0.3rem ;
+     border: none;
+     outline: none;
+     margin-top: 0.9rem;
+     width: 96%;
+}
+::placeholder{
+    color: rgb(44, 43, 43);
+    opacity: 1;
+    font-family: Arsenal , sans-serif;
+}
+ /* for microsoft edge */
+:-ms-input-placeholder{
+    color: rgb(48, 47, 47);
+    opacity: 1;
+}
+input:hover,input:active,input:focus{
+       outline: none;
+       border: none;
+}
+.first-name,.last-name{
+   width: 45%;
+   margin-top: 1.2rem;
+}
+.last-name{
+     margin-left: 1%;
+}
+.signup-error{
+       font-size: 0.5rem;
+       text-align: center;
+       font-style: oblique;
+       font-weight: bold;
+       letter-spacing: 1px;
+}
+.privacy{
+     font-size: 00.4rem;
+}
+#signup-agreement{
+     display: inline;
+     width: 20px;
+}
+label a{
+     text-decoration: none;
+}
+.signup-btn{
+    display: block;
+    font-size: 0.6rem;
+    width: 70%;
+    color: rgb(250, 249, 249);
+    background-color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 0.3rem 0;
+    border: none;
+    border-radius: 0.2rem;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    transition:all 0.3s ;
+}
+.signup-btn:active{
+     opacity: 0.4;
+}
+.have-an-account{
+     font-size: 00.5rem;
+     padding-left: 00.3rem;
+}
+.have-an-account a{
+    text-decoration: none;
+}
+
+/* mobile responsive */
+ @media screen and (max-width:480px) {
+         
+        .signup-form{
+                   width: 100%;
+                    padding: 2rem  0 2rem 0;
+              }
+        form{
+              width: 90%;    
+           }
+         fieldset{
+                    width: 90%;
+              }
+           legend{
+                width: 25%;
+          }
+          input{
+              width: 90%;
+           }
+           .first-name,.last-name{
+                   width: 90%;
+                    margin-top: 1rem;
+                 }
+              .last-name{
+                   margin-left: 0%;
+            }
+ }
+
+ /* for tablet devices */
+
+@media  screen and (min-width:500px)and (max-width:700px){
+         
+                  
+        .signup-form{
+                   width: 100%;
+                    padding: 2rem  0 2rem 0;
+              }
+        form{
+              width: 90%;    
+           }
+         fieldset{
+                    width: 90%;
+              }
+           legend{
+                width: 20%;
+          }
+          input{
+              width: 96%;
+           }
+           .first-name,.last-name{
+                   width: 45%;
+                    margin-top: 1rem;
+                 }
+              .last-name{
+                   margin-left: 2%;
+            }
+
+} 

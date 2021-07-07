@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="online store for mens collection">
+    <meta name = "author" content="AHMED SANI ADAMU">
+    <title>&#9772 signup page</title>    
+     <!-- custom style sheet-->
+
+      <link rel="stylesheet" href="./style.css">
+
+      <!-- sign up form style-->
+
+      <link rel="stylesheet" href="./signupstyle.css" />
+
+      <!-- *****  google font ***** -->
+
+      <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Oswald|Arsenal&effect=fire">
+</head>
+<body>
+     <nav>  
+           <div  class="close"> <span>&times</span> </div>
+            <a href="./index.html" target="_self"> <span class="fas fa-home"></span> Home</a>
+            <a href="#"> <span class="fas fa-globe-americas"></span>  About</a>
+            <a href="#"> <span class="fas fa-address-book"></span>  Contact</a>
+            <a href="#"> <span class="fas fa-database"></span> Products</a>
+            <a href="#"> <span class="fas fa-bell"></span> Latest</a>
+            <a href="#"> <span class="fas fa-comment-dollar"></span> Pricing</a>
+            <a href="./login.html">  <span class="fas fa-user"></span>  Login</a>
+            <a href="#">  <span class="fab fa-deezer"></span> Services</a>
+         </nav>
+    <header>
+        <span class="fas fa-bars"></span>
+       <div class="logo">
+             &#9772<p>GOLDEN STORE</p>
+       </div>
+        <div class="description">
+            Golden store is the fastest growing e-commerce
+            web store for mens collection that offers free 
+            and cheap delivery world wide <button class="shop-now">Shop now &#10142</button>     
+        </div>
+    </header>
+    <section class="first-section"> 
+           <span class="fas fa-cart-arrow-down"></span> 
+           <!-- below div a container that contains a table that displays a list of item bought-->
+           <input type="search" name="search-poduct" class="search" placeholder="&#128269 search product">
+            <div class="animation"> 
+                <span class="fas fa-plane"></span>
+               <p class="free-shipping"> Fast,free and cheap shipping world wide!</p>
+                <button class ="animation-shop-now"> shop now.</button>
+            
+            </div>
+    </section>
+    
+        <section class="signup-form">
+              <form action="./login.html" target="_blank" method="POST" autocomplete="on">
+                  <fieldset>
+                        <legend>sign up</legend>
+
+                        <input type="text" class="first-name" name="first-name"   maxlength="20" 
+                        placeholder="First name"  required>
+
+                        <input type="text" class="last-name" name="last-name" 
+                                maxlength="20"    placeholder="Last name" required>
+
+                        <input type="email" name="email" placeholder=" email" class="email" required>
+
+                        <input type="number" name="number" placeholder="mobile number"
+                               class="mobile-number"   required>
+
+                        <input type="password" name="password" placeholder="password" maxlength="12"
+                                class="password" pattern=".{8,}" title="minimum 8 characters" required>
+
+                        <input type="password" name="password" placeholder="confirm password" maxlength="12"
+                                class="confirm-password" pattern=".{8,}" title="minimum 8 characters" required>   
+
+                         <p class="signup-error" ></p>
+
+                         <div class="privacy">
+                              <input type="checkbox" name="signup-agreement" id="signup-agreement">
+                              <label for="signup-agreement" >
+                                       i accept  <a href="#">term of use</a>
+                                       and <a href="#">privacy policy</a>
+                                </label>
+                         </div>
+
+                        <button class="signup-btn" type="submit">sign up</button>
+
+                 </fieldset>
+                 <p class="have-an-account">already have an account?
+                           <a href="./login.html">login</a></p>
+          </form>
+     </section>
+
+         <section  class="advert-section">
+           <div class="brand-partners">
+                  <h2>Brand partners</h2>
+                  <div class="companies">
+                       <img src="./goldenstoreimages/puma.png" alt="puma logo" >
+                       <img src="./goldenstoreimages/addidas.png" alt="addidas logo" >
+                       <img src="./goldenstoreimages/cocacolla.png" alt="cocacolla logo" >
+                       <img src="./goldenstoreimages/nike.png" alt="nike logo" >
+                       <img src="./goldenstoreimages/pepsi.png" alt="pepsi logo" >
+                  </div>
+           </div>
+           <div class="advert">
+              <h2><span class="fas fa-ad"></span> Advertisement</h2>
+               <img class = "advert-images" src="./goldenstoreimages/advert5.png" alt="advertisement" >
+           </div>
+    </section>
+    <footer>
+           <div class="grid-container">
+              <div class="footer-logo">
+                      <div class="logo">
+                          &#9772<p>GOLDEN STORE</p>
+                     </div>
+                     <p>Reward for passion!!!</p>
+              </div>
+              <div class="about-us">
+                      <h2>About us</h2>
+                      <ul>
+                           <li>help center</li>
+                           <li>contact us</li>
+                           <li>advertise with us</li>
+                           <li>make money with us</li>
+                           <li>privacy policy</li>
+                           <li>terms and conditions</li>
+                      </ul>
+              </div>
+              <div class="dowmload-app">
+                     <h2 id="download-our-app">Download our app on</h2>
+                     <div class="playstore"></div>
+                     <div class="applestore"></div>
+              </div>
+           </div>
+           <div class="social-media-and-payment-method">
+                   <div>
+                        <h2 class="social-media-header">follow us on :</h2>
+                        <div class="social-media">
+                                  <span class="facebook"></span>
+                                  <span class="twitter"></span>
+                                  <span class="youtube"></span>
+                                  <span class="instagram"></span>
+                                  <span class="linkedin"></span>
+                                  <span class="google-plus"></span>
+                        </div>
+                   </div>
+                   <div>
+                         <h2 class="payment-method-header">our payment methods :</h2>
+                         <div class="payment-method">
+                               <span class="paypal"></span>
+                               <span class="bitcoin"></span>
+                               <span id="verve"></span>
+                               <span id="visa"></span>
+                               <span id="master-card"></span>
+                         </div>
+                   </div>
+           </div>
+    </footer>
+ <!-- font awesome icons -->
+      <script src="https://kit.fontawesome.com/9ee600ba89.js"></script>
+      <!--local storage script -->
+      <script src="./storage.js"></script>
+      <!-- login form validation -->
+      <script src="./signupvalidation.js"></script>
+    <!-- main script file-->
+    <script src="./script.js"></script>
+   </body>
+</html>
