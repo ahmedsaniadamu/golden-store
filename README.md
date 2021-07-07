@@ -1,8 +1,8 @@
- #golden store
+ #  golden store
   this website is build just for practice. you can clone it if needed modify it and add your own features 
-  ##site details
+  ## site details
    the side contains only 3 pages homepage login page and signup page..
-   ##note 
+   ## note !
    signup form and login form communicate with each other via storage.js file
    which included in both the two pages and also stores users input in a localStorage API
 
